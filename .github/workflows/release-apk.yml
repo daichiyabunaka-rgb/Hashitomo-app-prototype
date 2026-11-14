@@ -69,7 +69,7 @@ jobs:
           ZIP="$GITHUB_WORKSPACE/hashitomo-$TAG-android-apk.zip"
           if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY"; then
             gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
-              --title "ニーアキャット $TAG" --notes "Android APK"
+              --title "走りとも！ $TAG" --notes "Android APK"
           fi
           gh release upload "$TAG" "$ZIP" --clobber --repo "$GITHUB_REPOSITORY"
           gh release edit "$TAG" --draft=false --repo "$GITHUB_REPOSITORY"

@@ -39,7 +39,7 @@ fun dartDefines(): Map<String, String> {
 }
 
 android {
-    namespace = "com.costomo.costomo"
+    namespace = "com.hashitomo.hashitomo"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -50,7 +50,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.costomo.costomo"
+        applicationId = "com.hashitomo.hashitomo"
         manifestPlaceholders["MAPS_API_KEY"] =
             dartDefines()["GOOGLE_MAPS_API_KEY"] ?: ""
         // You can update the following values to match your application needs.
